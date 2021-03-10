@@ -1,0 +1,86 @@
+.row {
+    margin-left: 20px;
+    color: white;
+    position: relative;
+}
+.row__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+    
+}
+.row__posters::-webkit-scrollbar {
+    /* width: 6px;
+    height: 6px; */
+    display: none;
+}
+
+/* .row__posters::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(247, 243, 243, 0.2);
+}
+.row__posters::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(221, 218, 218, 0.1);
+} */
+
+.row__poster_img {
+    object-fit: contain;
+    width: 100%;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+    
+}
+.row__poster_img:hover {
+    transform: scale(1.08);
+} 
+.row__poster_img_large {
+    max-height: 250px;
+}
+.row__poster_img_large:hover {
+    transform: scale(1.09);
+}
+.row__popup {
+    position: relative;
+}
+.row__popup_btn {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border:none;
+    border-radius: 20px;
+    outline: none;
+    background-color: rgba(0,0,0,.5);
+    transition: all 0.2s ease-in;
+}
+.row__popup_btn:hover {
+    color: red;
+}
+.btn__scroll-btn {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border:none;
+    border-radius: 20px;
+    outline: none;
+    background-color: rgba(231, 97, 97, 0.5);
+    transition: all 0.2s ease-in;
+    line-height: 30px;
+    font-size: 20px;
+}
+.btn__scroll-btn:hover {
+    background-color: rgba(216, 46, 46, 0.5);
+}
+.right-btn {
+    right: 0;
+}
+.left-btn {
+    left: 0;
+}
